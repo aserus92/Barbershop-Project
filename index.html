@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Barbershop EPAM</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+	<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Podkova:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+</head>
+<body>
+	<header class="header">		
+		<nav class="container">			
+			<ul class="header-navigation">				
+				<li><a href="#">Новости</a></li>
+				<li><a href="#about">О нас</a></li>
+				<li><a href="#gallery">Галерея</a></li>
+				<li><a href="#adress">Контакты</a></li>
+			</ul>
+			<ul class="header-navigation-login">
+				<li><a onclick="existCheck()">Личный кабинет</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="main-info container">
+			<h1 class="visually-hidden">Наш прекрасный барбершоп</h1>
+			<img src="img/logo2.png" width="500px">
+			<p class="slogan">Мода – вопрос денег.<br> Стиль – вопрос индивидуальности.</p>
+		</section>
+		<section class="about-us" id="about">
+			<img src="img/2block.jpg">
+			<div class="about-us-text">
+				<h2>Добро пожаловать в The Barber Shop</h2>
+				<p class="about-us-subheader">Здесь нет женщин, нет праздных разговоров ни о чем, здесь царит атмосфера брутальности и мужского духа, вдохновлённая европейскими стандартами качества и стиля.</p>
+				<p class="about-us-description">The Barber Shop – намного больше чем просто мужская парикмахерская, это даже больше чем мужской клуб по интересам, это именно то место, где ты найдешь себя и свой стиль. Мужские стрижки и опасное бритье — это именно наш профиль, и мы уверены, что мы стрижем и бреем лучше всех.</p>
+			</div>
+		</section>
+		<section class="offer container" id="gallery">
+			<h2>Услуги</h2>
+			<p>Профессиональные услуги от высококвалифицированных мастеров нашего барбершопа</p>
+			<ul>
+				<li class="offer-bg offer-haircut">Стрижка</li>
+				<li class="offer-bg offer-shave">Бритье</li>
+				<li class="offer-bg offer-tattoo">Татуировки</li>
+			</ul>
+		</section>
+		<section class="appointment" id="adress">
+			<h2 class="visually-hidden">Записаться</h2>			
+			<h3><a onclick="existCheck()">Запись к мастеру</a></h3>		
+		</section>
+	</main>
+	<footer class="container">
+		<section class="contacts">
+			<h2 class="visually-hidden">Контактная информация</h2>
+	        <p>           
+	           <b>Адрес:</b><br> г. Санкт-Петербург,<br> Набережная Черной речки, 41 корпус 7<br>
+	           Телефон: +7 (812) 309-25-12
+	        </p>
+	        <p>
+	          <b>Время работы:</b><br>
+	          пн—пт: с 10:00 до 22:00<br>
+	          сб—вс: с 10:00 до 19:00
+	        </p>	        
+		</section>
+	</footer>
+	<script type="text/javascript" src="js/script.js"></script>	
+</body> 
+</html>

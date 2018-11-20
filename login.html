@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login - Barbershop EPAM</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+	<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Podkova:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+</head>
+<body>
+	<header class="header">		
+		<nav class="container">			
+			<ul class="header-navigation">				
+				<li><a href="#">Новости</a></li>
+				<li><a href="index.html#about">О нас</a></li>
+				<li><a href="index.html#gallery">Галерея</a></li>
+				<li><a href="index.html#adress">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="logo">
+			<a href="index.html">
+				<img src="img/logo2.png" width="300px">
+			</a>
+		</section>
+		<section class="appointment">
+			<div class="container-login">
+				<div class="login">
+					<h2>Уже были?</h2>
+					<form>
+						<p>
+							<input type="e-mail" name="email" placeholder="Ваш E-mail" required>
+						</p>
+						<p>
+							<input type="password" name="password" placeholder="*******" required>
+						</p>
+						<button class="button" type="submit" onclick="checkAuth();">Войти</button>
+					</form>
+				</div>
+				<div class="registration">
+					<h2>Первый раз?</h2>
+					<form>
+						<!--Имя?-->
+						<p>
+							<input type="e-mail" name="getEmail" placeholder="Ваш E-mail" required>
+						</p>
+						<p>
+							<input type="password" name="getPassword" placeholder="*******" required>
+						</p>
+						<button class="button" type="submit" onclick="checkReg();">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>				
+		</section>
+	</main>
+	<footer class="container">
+		<section class="contacts">
+			<h2 class="visually-hidden">Контактная информация</h2>
+	        <p>           
+	           <b>Адрес:</b><br> г. Санкт-Петербург,<br> Набережная Черной речки, 41 корпус 7<br>
+	           Телефон: +7 (812) 309-25-12
+	        </p>
+	        <p>
+	          <b>Время работы:</b><br>
+	          пн—пт: с 10:00 до 22:00<br>
+	          сб—вс: с 10:00 до 19:00
+	        </p>	        
+		</section>  
+	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

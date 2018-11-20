@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Profile - Barbershop EPAM</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+	<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Podkova:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+</head>
+<body>
+	<header class="header">		
+		<nav class="container">			
+			<ul class="header-navigation">
+				<li><a href="#app">Записаться</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="index.html#about">О нас</a></li>
+				<li><a href="index.html#gallery">Галерея</a></li>
+				<li><a href="index.html#adress">Контакты</a></li>
+			</ul>
+			<ul class="header-navigation-login">
+				<li><a onclick="logOut();">Выход</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="logo">
+			<a href="index.html">
+				<img src="img/logo2.png" width="300px">
+			</a>
+		</section>
+		<section class="order container">
+			<p>Вы зашли, как <span class="current-account">Incognito</span>.</p>			
+		</section>
+		<section class="appointment" id="app">
+			<h2 class="visually-hidden">Записаться</h2>
+			<div class="container-app">
+				<div class="appointment-form">
+					<h3>Запись к мастеру</h3>
+					<form action="" method="">						
+						<input type="text" name="name" placeholder="Имя">			
+						<input type="tel" name="phone" placeholder="Ваш телефон">
+						<select name="offer-list">
+							<option value="haircut">Стрижка</option>
+							<option value="shave">Бритье</option>
+							<option value="tattoo">Татуировка</option>
+						</select>
+						<select name="day">
+							<option value="monday">Понедельник</option>
+							<option value="tuesday">Вторник</option>
+							<option value="wednesday">Среда</option>
+							<option value="thursday">Четверг</option>
+							<option value="friday">Пятница</option>
+							<option value="saturday">Суббота</option>
+							<option value="sunday">Воскресенье</option>
+						</select>
+						<button class="button" type="submit" onclick="makeApp();">Записаться</button>
+					</form>
+				</div>			
+				<div class="appointment-text">
+					<p class="appointment-subscription">Наши мастера нарасхват, но всегда найдут свободное время для дорогих клиентов.</p>
+					<p class="appointment-subscription">Выберите процедуру и желаемый день, а мы предложим вариант.</p>
+				</div>
+			</div>			
+		</section>
+	</main>
+	<footer class="container">
+		<section class="contacts">
+			<h2 class="visually-hidden">Контактная информация</h2>
+	        <p>           
+	           <b>Адрес:</b><br> г. Санкт-Петербург,<br> Набережная Черной речки, 41 корпус 7<br>
+	           Телефон: +7 (812) 309-25-12
+	        </p>
+	        <p>
+	          <b>Время работы:</b><br>
+	          пн—пт: с 10:00 до 22:00<br>
+	          сб—вс: с 10:00 до 19:00
+	        </p>	        
+		</section>
+	</footer>
+	
+	<script type="text/javascript" src="js/appointment.js"></script>
+</body> 
+</html>
